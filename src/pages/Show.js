@@ -30,10 +30,11 @@ function Show(props) {
             defaultValue={post.spice_level}
           />
           <button>Update Cheeze</button>
+          </Form>
           <Form method="post" action={`/delete/${post.id}`}>
             <button>Delete this Cheda</button>
         </Form>
-        </Form>
+        
       </div>
       <Link to="/">Back to the Cheeze Farm</Link>
     </div>

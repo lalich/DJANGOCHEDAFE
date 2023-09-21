@@ -54,9 +54,9 @@ export const updateAction = async({request, params}) => {
 export const deleteAction = async({params}) => {
     // get the id from params
     const id = params.id
-
+console.log(url, id)
     // make a request to delete a todo
-    await fetch(url + id, {
+    await fetch(url + id + '/', {
         method: "delete"
     })
 
