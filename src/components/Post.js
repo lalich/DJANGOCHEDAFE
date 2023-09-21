@@ -13,8 +13,8 @@ function Post ({post}){
 
     return <div style={div}>
         <Link to={`/post/${post.id}`}>
-            <h1>{post.subject}</h1>
-            <h2>{post.details}</h2>
+            <h1>{post.name}</h1>
+            <h2>{post.spice_level}</h2>
         </Link>
     </div>
 }

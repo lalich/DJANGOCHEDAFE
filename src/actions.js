@@ -9,8 +9,8 @@ export const createAction = async({request}) => {
 
     // construct the body for our api call
     const newCheeze = {
-        subject: formData.get("subject"),
-        details: formData.get("details")
+        name: formData.get("name"),
+        spice_level: formData.get("spice_level")
     }
 
     // make a request to create a todo
@@ -33,8 +33,8 @@ export const updateAction = async({request, params}) => {
     const formData = await request.formData();
     // construct the updated todo
     const updatedCheeze = {
-        subject: formData.get("subject"),
-        details: formData.get("details")
+        name: formData.get("name"),
+        spice_level: formData.get("spice_level")
     }
 
     // make a request to update a todo
